@@ -1,0 +1,22 @@
+generator client {
+  provider = "prisma-client-js"
+  engine   = "binary"
+  // Recommended binaryTargets for Netlify (Linux x64). Adjust if you know your target.
+  // See Prisma docs: https://pris.ly/d/binary-targets
+  binaryTargets = ["debian-openssl-3.0.x-x64", "linux-musl-x64"]
+}
+
+datasource db {
+  provider = "mysql"
+}
+
+model Paste {
+  id            String    @id @default(cuid())
+  content       String
+  created_at    DateTime  @default(now())
+  expires_at    DateTime?
+  max_views     Int?
+  current_views Int       @default(0)
+
+  @@index([id])
+}

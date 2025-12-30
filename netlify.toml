@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+# Optional: set environment variables in the Netlify UI or via CLI
+# See README for recommended env vars (DATABASE_URL, NEXT_PUBLIC_SITE_URL, PRISMA_CLIENT_ENGINE)
