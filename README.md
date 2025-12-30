@@ -22,7 +22,7 @@ A production-ready, minimal text paste application built with Next.js and Prisma
 
 1. **Install Dependencies**:
    ```bash
-   bun install
+   npm install
    ```
 
 2. **Setup Database**:
@@ -33,7 +33,7 @@ A production-ready, minimal text paste application built with Next.js and Prisma
 
 3. **Run Development Server**:
    ```bash
-   bun dev
+   npm run dev
    ```
 
 4. **Health Check**:
